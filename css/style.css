@@ -1,7 +1,7 @@
 
 /* start style public */
 body{
-    background-color:  #ed425610;
+    background-color:  #00714496;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .body-index{
@@ -143,7 +143,7 @@ a:hover{
     }
 }
         #skill{
-         padding-top: 50px;
+         margin-top: 30px;
         }
         .box-skill {
             background-color: rgba(255, 255, 255, 0.658);
@@ -152,11 +152,13 @@ a:hover{
             background-size: cover;
             position: relative;
             border-radius: 10px;
+            box-shadow: 0 6px 14px #00000073;
           
         }
-       .box-skill h2{
+        .box-skill h2{
             border-bottom: 2px solid #004019;
         }
+      
         .box-skill .back-image {
             width: 100%;
             height: 100%;
@@ -200,8 +202,17 @@ a:hover{
 
         #projects .card {
             min-height: 100%;
+            box-shadow: 0 6px 14px #00000073;
+            border: none;
+            border-radius: 10px;
+            transition: all .3s ease-in-out;
         }
 
+        #projects .card:hover {
+            cursor: pointer;
+            box-shadow: inset 0 0 5px #00000073;
+            transform: scale(.99);;
+        }
         #projects .card-body .back-image {
             width: 100%;
             height: 100%;
@@ -221,6 +232,9 @@ a:hover{
             color: #4d0001;
             font-weight: 600;
         }
+        #projects .card-footer{
+            border-top: none;
+        }
         #contact {
             margin: 20px 0;
         }
@@ -237,6 +251,7 @@ a:hover{
             padding: 50px 0;
             border-radius: 10px;
         }
+        /* start page projects */
         .link-back-home {
             color: #004019;
             line-height: 25px;
@@ -259,6 +274,7 @@ a:hover{
             background-color: #fff;
             border-radius: 10px;
             padding: 30px;
+            box-shadow: 0 6px 14px #0040197d;
         }
 
         .single-project .back-image {
@@ -275,7 +291,7 @@ a:hover{
             max-width: 100%;
             max-height: 100%;
             border-radius: 5px;
-            border: 1px solid rgb(189, 189, 189);
+            border: 1px solid rgba(189, 189, 189, 0.31);
         }
 
         .single-project .title {
@@ -294,8 +310,18 @@ a:hover{
             background-color: #fff;
             border-radius: 10px;
             padding: 15px 30px 30px;
+            box-shadow: 0 6px 14px #0040197d;
         }
-
+        .other-project .card{
+         box-shadow: 0 10px 25px -10px #0000005e;
+         border: none;
+         border-radius: 10px;
+         transition: all .3s ease-in-out;
+     }
+     .other-project .card:hover{
+         transform: scale(1.05);
+         cursor: pointer;
+     }
         .btn-accordion {
             font-size: 14px;
             color: #004019;
@@ -312,11 +338,15 @@ a:hover{
         }
 
         .other-project .card img {
-            border-radius: 5px 5px 0 0;
+            border-radius: 10px 10px 0 0;
         }
         .other-project .card h6{
             color: #4d0001;
             font-weight: 700;
+        }
+        .album-project{
+            max-height: 600px;
+            overflow-y: scroll;
         }
         @media screen and (max-width:576px) {
 
