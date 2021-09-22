@@ -238,14 +238,9 @@ a:hover{
         #contact {
             padding: 20px 0;
         }
-        #contact .div-contact{
-               background-color: #007144d1;
-            padding: 15px;
-            border-radius: 15px;
-          
-        }
+     
         .txt-contact {
-            color: #fff;
+            color: #000;
             font-size: 14px;
             line-height: 25px;
             margin-bottom: 0;  
